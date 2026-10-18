@@ -1,0 +1,27 @@
+{
+  "name": "ai-vision-companion",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Assistive web app that detects objects through the camera and describes them aloud.",
+  "scripts": {
+    "dev": "vite",
+    "dev:https": "vite --mode https",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "test": "node --test",
+    "download-model": "node scripts/download-model.mjs"
+  },
+  "dependencies": {
+    "@tensorflow-models/coco-ssd": "^2.2.3",
+    "@tensorflow/tfjs": "^4.22.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tesseract.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.4"
+  }
+}
